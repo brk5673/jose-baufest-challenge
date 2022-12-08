@@ -4,17 +4,24 @@
 
 > Just a simple demo for baufest challenge
 
+- ## 💻 Pre-requisites
+
+1. Node JS 14 or higher
+2. Java 8 for Allure Reporter (optional for reports)
+3. Install Allure Reporter (optional for reports)
+      On Mac: > brew install allure
+
 ## 🚀 Install the project
 
-Install project dependencies with: 
+Install project dependencies with:
 > npm i
 
 ## Run the demo:
 
 1. Standard Execution: 
 > npm run cy:open
-3. Allure Report: 
-   1. npm run cypress:execution-allure
-   2. npm run allure:report
-   3. allure open
+Then just select the test you want to run from the test runner
 
+2. Allure Report: 
+   1. npm run cy:run-report
+      A new tab should open with the report

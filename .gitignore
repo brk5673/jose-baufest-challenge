@@ -48,7 +48,13 @@ Thumbs.db
 *.mov
 *.wmv
 
+
 # Cucumber Report
 reports
 
 .history
+
+cypress/videos
+cypress/screenshots
+
+allure-results
