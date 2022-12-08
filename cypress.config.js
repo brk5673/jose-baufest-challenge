@@ -23,11 +23,14 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
-    specPattern: "cypress/e2e/features/*.feature",
+    specPattern: "cypress/e2e/features/*.{feature,ts}",
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,
     },
-    watchForFileChanges: false
+    viewportHeight: 980,
+    viewportWidth: 1280,
+    watchForFileChanges: false,
+    retries: 1
   },
 });

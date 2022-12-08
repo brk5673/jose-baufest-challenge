@@ -1,7 +1,7 @@
 {
   "name": "cypress-cucumber-boilerplate",
   "author": "Jose Cáceres",
-  "version": "2.2.0",
+  "version": "1.0.0",
   "description": "Challenge from Baufest",
   "main": "index.js",
   "scripts": {

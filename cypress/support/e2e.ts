@@ -19,3 +19,12 @@ import '@shelex/cypress-allure-plugin';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+declare global {
+    // eslint-disable-next-line
+    namespace Cypress {
+      interface Chainable {
+        getRandomPetName(): void;
+      }
+    }
+  }

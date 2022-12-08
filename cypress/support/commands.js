@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("delay", () => {
+    cy.wait(1000);
+})
+
+Cypress.Commands.add("getRandomPetName", () => {
+    cy.request({
+        method: 'GET',
+        url: 'https://www.randomlists.com/data/dog-names.json',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then((response) => {
+        let petName = response.body.data[Math.floor(Math.random() * response.body.data.length)] //get some int random index
+        return petName;
+    })
+})
